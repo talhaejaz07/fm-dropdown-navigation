@@ -16,6 +16,7 @@ const theme = {
   },
 
   fontSize: {
+    small: "1rem",
     regular: "1.125rem",
     large: "2.5rem",
   },
@@ -23,6 +24,7 @@ const theme = {
   containerWidth: "min(96rem, 100vw - 2rem)",
 
   spacing: {
+    xxxSmall: "0.5rem",
     xxSmall: "0.75rem",
     xSmall: "1rem",
     small: "1.25rem",

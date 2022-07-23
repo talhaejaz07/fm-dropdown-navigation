@@ -1,27 +1,23 @@
 import React from "react";
-import styled from "styled-components";
 
-import Logo from "../assets/images/logo.svg";
+import { HeaderWrapper, Li, Button } from "../components";
+
+import Logo from "../images/logo.svg";
 
 export function Header() {
   return (
     <HeaderWrapper>
       <img src={Logo} alt="Logo" />
       <menu>
-        <li>Features</li>
-        <li>Company</li>
-        <li>Careers</li>
-        <li>About</li>
+        <Li dropDown="True">Features</Li>
+        <Li dropDown="True">Company</Li>
+        <Li>Careers</Li>
+        <Li>About</Li>
       </menu>
       <div className="login-group">
-        <li>Login</li>
-        <button>Register</button>
+        <Li>Login</Li>
+        <Button text="Register" />
       </div>
     </HeaderWrapper>
   );
 }
-
-const HeaderWrapper = styled.header`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-`;
