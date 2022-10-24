@@ -51,6 +51,40 @@ p {
   margin-right: 30%;
 }
 
-.hero-image-desktop {
+.hero-image {
   width: 100%;
+}
+
+@media only screen and (max-width: 36rem) {
+  .hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+  }
+
+  .hero-description {
+    margin-top: 0;
+    margin-right: 0;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .logo-list {
+    margin-right: 0;
+    gap: 0.5rem;
+  }
 }

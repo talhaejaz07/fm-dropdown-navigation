@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroStyles.css";
 import ImageDesktop from "../../images/image-hero-desktop.png";
+import ImageMobile from "../../images/image-hero-mobile.png";
 
 import DataBiz from "../../images/client-databiz.svg";
 import AudioPhile from "../../images/client-audiophile.svg";
@@ -27,7 +28,11 @@ export const Hero = () => {
           <img src={Maker} alt="Maker" />
         </div>
       </div>
-      <img className="hero-image-desktop" src={ImageDesktop} alt="HeroImage" />
+      <picture>
+        <source srcset={ImageDesktop} media="(min-width: 577px)" />
+        <source srcset={ImageMobile} media="(max-width: 576px)" />
+        <img className="hero-image" src={ImageDesktop} alt="HeroImage" />
+      </picture>
     </section>
   );
 };
