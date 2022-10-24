@@ -30,6 +30,11 @@ li {
   color: var(--dark-clr);
 }
 
+.arrow {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
 .arrow::after {
   content: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23696969' stroke-width='1.5' fill='none' d='m1 1 4 4 4-4'/%3E%3C/svg%3E");
   margin-left: 0.25rem;
@@ -37,6 +42,43 @@ li {
 
 .arrow:hover::after {
   content: url("data:image/svg+xml,%3Csvg width='10' height='6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23141414' stroke-width='1.5' fill='none' d='m1 5 4-4 4 4'/%3E%3C/svg%3E");
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feature-name {
+  font-size: 0.9rem;
+  color: var(--grey-clr);
+  white-space: nowrap;
+}
+
+.drop-down-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0rem 0.5rem 1rem 0.25rem rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.arrow:hover .drop-down-card {
+  display: block;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.feature-icon {
+  margin-bottom: 0.25rem;
 }
 
 .header-button {
