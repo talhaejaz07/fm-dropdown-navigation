@@ -8,8 +8,8 @@ export const Header = () => {
       <img src={Logo} alt="logo" />
 
       <ul className="header-link-list">
-        <li className="header-link">Features</li>
-        <li className="header-link">Company</li>
+        <li className="header-link arrow">Features</li>
+        <li className="header-link arrow">Company</li>
         <li className="header-link">Careers</li>
         <li className="header-link">About</li>
       </ul>
