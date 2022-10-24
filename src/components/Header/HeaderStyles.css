@@ -31,14 +31,14 @@ li {
 }
 
 .header-button {
-  background-color: var(--light-clr);
+  background-color: transparent;
   border-color: var(--grey-clr);
   color: var(--grey-clr);
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   cursor: pointer;
   font-size: 0.9rem;
 }
