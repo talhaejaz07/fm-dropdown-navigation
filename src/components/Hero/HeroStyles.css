@@ -7,6 +7,8 @@
 .hero-grid {
   display: grid;
   grid-template-columns: 60% 40%;
+
+  align-items: center;
 }
 
 .hero-description {
@@ -15,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
 
 h1 {

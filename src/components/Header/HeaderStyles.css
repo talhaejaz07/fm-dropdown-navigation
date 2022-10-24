@@ -97,3 +97,39 @@ li {
   border-color: var(--dark-clr);
   color: var(--dark-clr);
 }
+
+@media only screen and (max-width: 66rem) {
+  .header-link-list {
+    margin-right: 30%;
+  }
+}
+
+@media only screen and (max-width: 52rem) {
+  .header-link-list {
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 50rem) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    row-gap: 1rem;
+  }
+
+  .header-link-list {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin-right: 0%;
+  }
+
+  .login {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .header-button {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}

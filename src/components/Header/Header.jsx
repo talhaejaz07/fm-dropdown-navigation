@@ -67,7 +67,7 @@ export const Header = () => {
         <li className="header-link">About</li>
       </ul>
 
-      <li className="header-link">Login</li>
+      <li className="header-link login">Login</li>
 
       <button className="header-button">Register</button>
     </header>
