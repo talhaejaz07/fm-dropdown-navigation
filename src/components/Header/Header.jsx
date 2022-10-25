@@ -102,6 +102,7 @@ export const Header = () => {
             alt="CloseButton"
           />
         </div>
+        <nav></nav>
       </header>
     </>
   );
