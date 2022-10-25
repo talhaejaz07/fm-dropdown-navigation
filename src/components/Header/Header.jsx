@@ -10,7 +10,6 @@ export const Header = () => {
   return (
     <header className="header-container header-grid">
       <img src={Logo} alt="logo" />
-
       <ul className="header-link-list">
         <li className="header-link arrow">
           Features

@@ -1,7 +1,7 @@
 import React from "react";
 import "./HeroStyles.css";
-import ImageDesktop from "../../images/image-hero-desktop.png";
-import ImageMobile from "../../images/image-hero-mobile.png";
+import ImageDesktop from "../../images/image-hero-desktop.webp";
+import ImageMobile from "../../images/image-hero-mobile.webp";
 
 import DataBiz from "../../images/client-databiz.svg";
 import AudioPhile from "../../images/client-audiophile.svg";
@@ -16,7 +16,7 @@ export const Hero = () => {
           Make <br />
           remote work
         </h1>
-        <p>
+        <p className="hero-text">
           Get your team in sync, no matter your location. Streamline processes
           create team rituals, and watch productivity soar.
         </p>

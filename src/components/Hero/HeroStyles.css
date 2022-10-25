@@ -25,7 +25,7 @@ h1 {
   color: var(--dark-clr);
 }
 
-p {
+.hero-text {
   font-size: 18px;
   color: var(--grey-clr);
   max-width: 50ch;
@@ -79,7 +79,7 @@ p {
     text-align: center;
   }
 
-  p {
+  .hero-text {
     text-align: center;
   }
 
