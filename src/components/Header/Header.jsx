@@ -21,7 +21,7 @@ export const Header = () => {
       <header className="header-container header-grid desktop-design">
         <img src={Logo} alt="logo" />
         <ul className="header-link-list">
-          <li className="header-link arrow">
+          <li className="header-link arrow bottom-padding">
             Features
             <div className="drop-down-card">
               <ul className="features-list">
@@ -56,7 +56,7 @@ export const Header = () => {
               </ul>
             </div>
           </li>
-          <li className="header-link arrow">
+          <li className="header-link arrow bottom-padding">
             Company
             <div className="drop-down-card">
               <ul className="features-list">
@@ -102,8 +102,29 @@ export const Header = () => {
             alt="CloseButton"
           />
         </div>
-        <nav></nav>
       </header>
+      <div className={click ? "grey-screen scale" : "grey-screen"} />
+      <nav className="mobile-navbar">
+        <ul className="mobile-link-list">
+          <li>
+            <p className="mobile-link arrow">Features</p>
+          </li>
+          <li>
+            <p className="mobile-link arrow">Company</p>
+          </li>
+          <li>
+            <p className="mobile-link">Careers</p>
+          </li>
+          <li>
+            <p className="mobile-link">About</p>
+          </li>
+        </ul>
+        <p className="mobile-link login-link">Login</p>
+
+        <button className="header-button mobile-button-alignment">
+          Register
+        </button>
+      </nav>
     </>
   );
 };
