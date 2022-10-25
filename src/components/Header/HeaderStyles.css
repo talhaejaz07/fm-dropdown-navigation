@@ -1,3 +1,5 @@
+/* Desktop Header */
+
 .header-container {
   margin-top: 2rem;
   width: min(90rem, 100vw - 2rem);
@@ -131,5 +133,41 @@ li {
   .header-button {
     grid-column: 3/4;
     grid-row: 1/2;
+  }
+}
+
+/* Mobile Header */
+
+.mobile-header-container {
+  margin-top: 1.5rem;
+  margin-left: 0.75rem;
+  position: relative;
+}
+
+.menu-burger-button,
+.menu-close-button {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.opacity-none {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+}
+
+/* Design Switcher */
+
+@media only screen and (min-width: 577px) {
+  .mobile-design {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .desktop-design {
+    display: none;
   }
 }

@@ -29,8 +29,8 @@ export const Hero = () => {
         </div>
       </div>
       <picture>
-        <source srcset={ImageDesktop} media="(min-width: 577px)" />
-        <source srcset={ImageMobile} media="(max-width: 576px)" />
+        <source srcSet={ImageDesktop} media="(min-width: 577px)" />
+        <source srcSet={ImageMobile} media="(max-width: 576px)" />
         <img className="hero-image" src={ImageDesktop} alt="HeroImage" />
       </picture>
     </section>
