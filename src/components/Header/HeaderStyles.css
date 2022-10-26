@@ -185,6 +185,17 @@ li {
   height: 100vh;
   right: 0%;
   width: 70%;
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-duration: 100ms;
+  transform-origin: right;
+}
+
+.mobile-navbar-appear {
+  transform: scaleX(1);
+  transition-property: transform;
+  transition-duration: 100ms;
+  transform-origin: right;
 }
 
 .mobile-link-list {

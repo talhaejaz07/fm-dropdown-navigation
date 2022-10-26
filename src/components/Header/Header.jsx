@@ -104,7 +104,13 @@ export const Header = () => {
         </div>
       </header>
       <div className={click ? "grey-screen scale" : "grey-screen"} />
-      <nav className="mobile-navbar .mobile-design">
+      <nav
+        className={
+          click
+            ? "mobile-navbar mobile-design mobile-navbar-appear"
+            : "mobile-navbar mobile-design"
+        }
+      >
         <ul className="mobile-link-list">
           <li>
             <p className="mobile-link arrow">Features</p>
