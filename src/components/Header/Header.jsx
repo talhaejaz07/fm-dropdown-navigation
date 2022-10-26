@@ -14,7 +14,19 @@ export const Header = () => {
   function ClickHandler() {
     setClick(!click);
   }
-  console.log(click);
+
+  const [mobileFeatures, setMobileFeatures] = useState(false);
+
+  function MobileFeaturesHandler() {
+    setMobileFeatures(!mobileFeatures);
+  }
+
+  const [mobilePages, setMobilePages] = useState(false);
+
+  function MobilePagesHandler() {
+    setMobilePages(!mobilePages);
+  }
+
   return (
     <>
       {/* Desktop Header */}
@@ -113,10 +125,74 @@ export const Header = () => {
       >
         <ul className="mobile-link-list">
           <li>
-            <p className="mobile-link arrow">Features</p>
+            <p onClick={MobileFeaturesHandler} className="mobile-link arrow">
+              Features
+            </p>
+
+            <div
+              className={
+                mobileFeatures
+                  ? "mobile-dropdown mobile-dropdown-appear"
+                  : "mobile-dropdown"
+              }
+            >
+              <ul className="mobile-features-list">
+                <li className="feature-item">
+                  <img className="feature-icon" src={TodoIcon} alt="TodoIcon" />
+                  <p className="feature-name">Todo List</p>
+                </li>
+                <li className="feature-item">
+                  <img
+                    className="feature-icon"
+                    src={CalenderIcon}
+                    alt="CalenderIcon"
+                  />
+                  <p className="feature-name">Calender</p>
+                </li>
+                <li className="feature-item">
+                  <img
+                    className="feature-icon"
+                    src={RemindersIcon}
+                    alt="RemindersIcon"
+                  />
+                  <p className="feature-name">Reminders</p>
+                </li>
+                <li className="feature-item">
+                  <img
+                    className="feature-icon"
+                    src={PlanningIcon}
+                    alt="PlanningIcon"
+                  />
+                  <p className="feature-name">Planning</p>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li>
-            <p className="mobile-link arrow">Company</p>
+            <p onClick={MobilePagesHandler} className="mobile-link arrow">
+              Company
+            </p>
+
+            <div
+              className={
+                mobilePages
+                  ? "mobile-dropdown-pages mobile-dropdown-pages-appear"
+                  : "mobile-dropdown-pages"
+              }
+            >
+              <ul className="mobile-pages-list">
+                <li className="feature-item">
+                  <p className="feature-name">History</p>
+                </li>
+                <li className="feature-item">
+                  <p className="feature-name">Our Team</p>
+                </li>
+                <li className="feature-item">
+                  <p className="feature-name">Blog</p>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <p className="mobile-link">Careers</p>
